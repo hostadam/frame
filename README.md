@@ -8,12 +8,12 @@ A Spigot/Bukkit API library to create and update scoreboards.
 * Developer friendly. Setup your board in a few lines.
 
 ## Example
-`
+```
 @Override
 public void onEnable() {
 	new Frame(new ExampleFrameAdapter());
 }
-`
+```
 ![](example.gif)
 
 ## Note
