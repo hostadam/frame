@@ -6,3 +6,8 @@ A Spigot/Bukkit API library to create and update scoreboards.
 * Supports up to 32 characters per line.
 * Extremely light weight.
 * Developer friendly. Setup your board in a few lines.
+
+** Note
+* It might have a similar structure to other Scoreboard APIs/libraries but the actual teams / updating scores technique is different. This is probably the most simple and performance efficient Scoreboard library.
+
+![](example.gif)

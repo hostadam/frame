@@ -17,7 +17,7 @@ public class FrameBoardEntry {
 	public FrameBoardEntry(FrameBoard board, String text) {
 		this.board = board;
 		this.text = text;
-		this.identifier = this.board.getUniqueIdentifier();
+		this.identifier = this.board.getUniqueIdentifier(text);
 
 		this.setup();
 	}
