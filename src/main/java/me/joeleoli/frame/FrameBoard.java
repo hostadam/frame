@@ -56,27 +56,11 @@ public class FrameBoard {
 	}
 
 	public String getUniqueIdentifier(String text) {
-		String identifier = getRandomChatColor();
-		String toAppend = "";
+		String identifier = getRandomChatColor() + ChatColor.WHITE;
 
-		// We need to make sure the last color in the identifier is white if no suffix
-		// is applied, otherwise the last color of the prefix.
-		if (text.length() > 16) {
-			final String lastColor = ChatColor.getLastColors(text);
-
-			if (lastColor == null) {
-				toAppend = ChatColor.WHITE.toString();
-			} else {
-				toAppend = lastColor;
-			}
+		while (this.identifiers.contains(identifier)) {
+			identifier = identifier + getRandomChatColor() + ChatColor.WHITE;
 		}
-
-		while (this.identifiers.contains(identifier + toAppend)) {
-			identifier = identifier + getRandomChatColor();
-		}
-
-		// Append the last color
-		identifier = identifier + toAppend;
 
 		// This is rare, but just in case, make the method recursive
 		if (identifier.length() > 16) {
