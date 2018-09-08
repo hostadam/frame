@@ -60,7 +60,7 @@ public class FrameBoardEntry {
 				prefix = prefix.substring(0, 15);
 				suffix = ChatColor.COLOR_CHAR + this.text.substring(17, this.text.length());
 			} else {
-				if (prefix.charAt(15) == ChatColor.COLOR_CHAR) {
+				if (prefix.charAt(14) == ChatColor.COLOR_CHAR) {
 					prefix = prefix.substring(0, 14);
 					suffix = this.text.substring(18, this.text.length());
 				} else {
