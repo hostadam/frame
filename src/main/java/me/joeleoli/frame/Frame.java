@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 import lombok.Getter;
+import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scoreboard.Objective;
@@ -81,7 +82,7 @@ public class Frame {
 
 						// If we're out of the new lines' range, it's safe to assume that
 						// we need to remove this entry.
-						final String line = newLines.get(i);
+						final String line = ChatColor.translateAlternateColorCodes('&', newLines.get(i));
 
 						// If the entry is null, just create a new one.
 						// Creating a new FrameBoardEntry instance will add
