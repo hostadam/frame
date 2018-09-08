@@ -61,8 +61,8 @@ public class FrameBoardEntry {
 				suffix = ChatColor.COLOR_CHAR + this.text.substring(17, this.text.length());
 			} else {
 				if (prefix.charAt(14) == ChatColor.COLOR_CHAR) {
+					suffix = prefix.substring(14, 16) + this.text.substring(18, this.text.length());
 					prefix = prefix.substring(0, 14);
-					suffix = this.text.substring(18, this.text.length());
 				} else {
 					suffix = this.text.substring(16, this.text.length());
 				}
