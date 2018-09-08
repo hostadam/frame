@@ -80,8 +80,7 @@ public class Frame {
 					for (int i = 0; i < newLines.size(); i++) {
 						FrameBoardEntry entry = board.getEntryAtPosition(i);
 
-						// If we're out of the new lines' range, it's safe to assume that
-						// we need to remove this entry.
+						// Translate any colors
 						final String line = ChatColor.translateAlternateColorCodes('&', newLines.get(i));
 
 						// If the entry is null, just create a new one.
