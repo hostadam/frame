@@ -56,7 +56,7 @@ public class FrameBoardEntry {
 			String prefix = this.text.substring(0, 16);
 			String suffix;
 
-			if (prefix.charAt(14) == ChatColor.COLOR_CHAR) {
+			if (prefix.charAt(15) == ChatColor.COLOR_CHAR) {
 				prefix = prefix.substring(0, 15);
 				suffix = this.text.substring(15, this.text.length());
 			} else if (prefix.charAt(14) == ChatColor.COLOR_CHAR) {
