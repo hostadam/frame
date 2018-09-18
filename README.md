@@ -3,6 +3,9 @@ A Spigot/Bukkit API library to create and update scoreboards.
 
 Many of the scoreboard libraries I've used are pretty trash and perform a heap of unnecessary operations. This maintains a similar structure to most libraries out there, but the internal functionality is more efficient and only does what it needs to do.
 
+### Credits
+* BizarreAlex for the structure
+
 ### Features
 * Non-flickering.
 * Supports up to 32 characters per line.
