@@ -6,7 +6,12 @@
 
     <groupId>me.joeleoli.frame</groupId>
     <artifactId>frame</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+
+    <modules>
+        <module>example-plugin</module>
+    </modules>
 
     <repositories>
         <repository>

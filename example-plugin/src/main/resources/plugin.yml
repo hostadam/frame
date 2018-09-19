@@ -1,0 +1,4 @@
+main: me.joeleoli.frame.ExampleFramePlugin
+name: ExampleFrame
+author: joeleoli
+version: 1.0

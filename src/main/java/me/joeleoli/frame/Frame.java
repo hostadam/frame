@@ -50,9 +50,13 @@ public class Frame {
 				final Scoreboard scoreboard = board.getScoreboard();
 				final Objective objective = board.getObjective();
 
+				// Just make a variable so we don't have to
+				// process the same thing twice
+				final String title = ChatColor.translateAlternateColorCodes('&', this.adapter.getTitle(player));
+
 				// Update the title if needed
-				if (!objective.getDisplayName().equals(this.adapter.getTitle(player))) {
-					objective.setDisplayName(this.adapter.getTitle(player));
+				if (!objective.getDisplayName().equals(title)) {
+					objective.setDisplayName(title);
 				}
 
 				final List<String> newLines = this.adapter.getLines(player);
