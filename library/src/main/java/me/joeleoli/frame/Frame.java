@@ -44,6 +44,7 @@ public class Frame {
 
 				// This shouldn't happen, but just in case
 				if (board == null) {
+					System.out.println("wtf");
 					continue;
 				}
 
